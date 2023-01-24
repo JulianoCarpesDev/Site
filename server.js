@@ -6,7 +6,7 @@ const rotas = require('./routes')
 
 
 app.set('views', path.resolve(__dirname, 'public'));
-app.set('view engine', 'ejs');
+//app.use('view engine', 'html');
 app.use(rotas)
 
 app.listen(process.env.PORT || 3000,()=>{
