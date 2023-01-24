@@ -1,3 +1,4 @@
+const path = require('path')
 exports.paginaInicial = (req,res)=>{
-    res.send('em produção')
+    res.sendFile(path.join(__dirname + "/public/index.html"))
 }
